@@ -58,7 +58,7 @@ const Home = () => {
 
   return (
     <div className="container max-h-[100vh]">
-      <div className="flex gap-5 mt-4 p-4 flex-col sm:flex-row">
+      <div className="flex gap-5 w-10/12 mx-auto mt-4 p-4 flex-col sm:flex-row">
         <div className="show-box relative sm:w-[80%]">
           <Editor
             options={options}
