@@ -4,10 +4,15 @@ const axios = require("axios");
 const PORT = 4000;
 
 const app = express();
-app.use(cors());
+app.use(
+  cors({
+    origin: "*",
+    credentials: true,
+  })
+);
 app.use(express.json());
 
-app.post("/compile", (req, res) => {
+app.post("/", (req, res) => {
   // get the required data
   let code = req.body.code;
   let language = req.body.language;
