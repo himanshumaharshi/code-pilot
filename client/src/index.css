@@ -1,13 +1,45 @@
+/* css for dark and light theme starts */
+:root {
+  --background: #e0e0e0;
+  --body-color: #212121;
+  --textA-color: #212121;
+  --textA-text: #e0e0e0;
+  --link-color: navy;
+  --border-clr: #212121;
+  --card-bg: #81d8d0;
+  --btn-bg: #bebebe;
+  --shw: rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="dark"] {
+  --background: #212121;
+  --body-color: #e0e0e0;
+  --textA-color: #e0e0e0;
+  --textA-text: #212121;
+  --link-color: navy;
+  --border-clr: #e0e0e0;
+  --card-bg: #555555;
+  --btn-bg: #2a3439;
+  --shw: rgba(255, 255, 255, 0.5);
+}
+
+.theme {
+  background-color: var(--background);
+  color: var(--body-color);
+}
+
+/* css for dark and light theme ends */
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }

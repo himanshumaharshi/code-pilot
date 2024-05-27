@@ -1,0 +1,5 @@
+.show-box {
+    box-shadow:
+        2px 2px 2px #5A5C5E,
+        -2px -2px 3px white;
+}
