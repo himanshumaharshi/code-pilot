@@ -24,7 +24,8 @@ const Home = () => {
     }
     // post request to compile endpoint
     axios
-      .post(`http://localhost:4000/compile`, {
+      // .post(`http://localhost:4000/compile`, {
+      .post(`https://code-pilot.onrender.com`, {
         code: userCode,
         language: userLanguage,
         input: userInput,
